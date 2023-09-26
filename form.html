@@ -6,6 +6,77 @@
     <title>Document</title>
 </head>
 <body>
+
+    <h2>기숙사 방 배정</h2>
     
-</body>
+    <form action="index.html">
+        <!-- 이름/text -->
+        <label for="fname">성:</label><br>
+        <input type="text" id="fname" name="fname" value="hong"><br>
+        <label for="lname">이름:</label><br>
+        <input type="text" id="lname" name="lname" value="Jangmi">
+        <br><br>
+
+        <!-- RC/radio -->
+        RC:<br>
+        <input type="radio" id="열송학사" name="rc" value="열송학사">
+        <label for="열송학사">열송학사</label><br>
+        <input type="radio" id="장기려" name="rc" value="장기려">
+        <label for="장기려">장기려</label><br>
+        <input type="radio" id="손양원" name="rc" value="손양원">
+        <label for="손양원">손양원</label><br>
+        <input type="radio" id="카마이클" name="rc" value="카마이클">
+        <label for="카마이클">카마이클</label><br>
+        <input type="radio" id="토레이" name="rc" value="토레이">
+        <label for="토레이">토레이</label><br>
+        <input type="radio" id="카이퍼" name="rc" value="카이퍼">
+        <label for="카이퍼">카이퍼</label>
+        <br><br>
+
+        <!-- 생활습관/checkbox -->
+        생활 습관:<br>
+        <input type="checkbox" id="habit1" name="habit1" value="snoring">
+        <label for="habit1"> 나는 코를 곤다.</label>
+        <input type="checkbox" id="habit2" name="habit2" value="clean">
+        <label for="habit2"> 나는 일주일에 한번 이상 청소를 한다.</label>
+        <input type="checkbox" id="habit3" name="habit3" value="sensitive">
+        <label for="habit3"> 나는 잠 잘때 예민한 편이다.</label><br>
+        <input type="checkbox" id="habit4" name="habit4" value="talk">
+        <label for="habit4"> 나는 방에서 방순이와 얘기를 자주 한다.</label>
+        <input type="checkbox" id="habit5" name="habit5" value="private">
+        <label for="habit5"> 나는 개인의 생활이 중요하다.</label>
+        <br><br>
+
+        <!-- 올해 학기 수/select -->
+        <label for="semester">이번 학기 수:</label>
+        <select id="semester" name="semester">
+            <option value="1">1학기</option>
+            <option value="2">2학기</option>
+            <option value="3">3학기</option>
+            <option value="4">4학기</option>
+            <option value="5">5학기</option>
+            <option value="6">6학기</option>
+            <option value="7">7학기</option>
+            <option value="8">8학기 이상</option>
+        </select>
+        <br><br>
+
+        <!-- 생일/date -->
+        <p>이번학기부터 RC에서 룸메이트 생일 챙기기 행사가 시작될 예정입니다!<br>
+            따라서 <strong>본인</strong> 의 <strong>생년월일</strong>을 선택해주세요 :></p>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+        <br><br>
+
+        <!-- 추가로 하고싶은 말/textarea -->
+        <p>추가로 하고 싶은 말이나 혹시 기숙사 방이 배정될 때 고려해야 할 주의사항이 있다면 적어주세요.</p>
+        <textarea name="message" rows="10" cols="60">저번 방에 룸메가 너무 시끄러워서 힘들었어요..
+        </textarea> 
+        <br><br>
+
+
+        <input type="submit" value="Submit (Go to index page)">
+      
+    </form> 
+    </body>
 </html>

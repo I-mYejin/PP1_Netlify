@@ -129,16 +129,29 @@ a:hover {
             <div id="menubar">
                 <ul id="menulist">
                     <li class="menuitem" onclick="reStyle(0)">
-                        Stylesheet 1
+                        <a href='style1.html'>
+                            Stylesheet 1
+                        </a>
                     </li>
                     <li class="menuitem" onclick="reStyle(1)">
-                        Stylesheet 2
+                        <a href='style2.html'>
+                            Stylesheet 2
+                        </a>
                     </li>
                     <li class="menuitem" onclick="reStyle(2)">
-                        Stylesheet 3
+                        <a href='example.html'>
+                            Stylesheet 3
+                        </a>
                     </li>
                     <li class="menuitem" onclick="reStyle(3)">
-                        No Stylesheet
+                        <a href='nostyle.html'>
+                            No Style
+                        </a>
+                    </li>
+                    <li class="menuitem" onclick="reStyle(4)">
+                        <a href='form.html'>
+                            Form
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -151,7 +164,9 @@ a:hover {
                     ,
                     <a href="style2.html" onclick="reStyle(1);return true">Stylesheet2</a>
                     ,
-                    <a href="style3.html" onclick="reStyle(2);return true">Stylesheet3</a>
+                    <a href="example.html" onclick="reStyle(2);return true">Stylesheet3</a>
+                    ,
+                    <a href="form.html" onclick="noStyle();return true">Formsheet</a>
                 </p>
                 <h2>No Styles</h2>
                 <p>
