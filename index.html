@@ -6,22 +6,26 @@
     <title>Document</title>
 </head>
 <body>
-    <h1> Hello World!! </h1>
-    <div id="menubar">
-        <ul id="menulist">
-            <li class="menuitem" onclick="reStyle(0)">
-                "Stylesheet 1"
-            </li>
-            <li class="menuitem" onclick="reStyle(1)">
-                "Stylesheet 2"
-            </li>
-            <li class="menuitem" onclick="reStyle(2)">
-                "Stylesheet 3"
-            </li>
-            <li class="menuitem" onclick="reStyle(3)">
-                "No Stylesheet"
-            </li>
-        </ul>
+    <h1> Welcome! THis is 예진's world~ </h1>
+    <div id="main">
+        <h1>Same Page different Stylesheets</h1>
+        <p>
+            "This is a demonstration of how diffenrent blabla"
+            <br>
+            <a href="style1.html" onclick="reStyle(0);return true">Stylesheet1</a>
+            ","
+            <a href="style2.html" onclick="reStyle(1);return true">Stylesheet2</a>
+            ","
+            <a href="style3.html" onclick="reStyle(2);return true">Stylesheet3</a>
+        </p>
+        <h2>No Styles</h2>
+        <p>
+            "This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:"
+            <br>
+            <a href="#" onclick="noStyle();return false">No Stylesheet
+            </a>
+            "."
+        </p>
     </div>
 </body>
 </html>
